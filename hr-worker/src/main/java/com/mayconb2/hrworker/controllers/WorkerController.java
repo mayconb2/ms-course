@@ -3,7 +3,10 @@ package com.mayconb2.hrworker.controllers;
 import com.mayconb2.hrworker.entities.Worker;
 import com.mayconb2.hrworker.repositories.WorkerRepository;
 import com.mayconb2.hrworker.service.WorkerService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,12 +17,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/workers")
-public class WorkController {
+public class WorkerController {
 
     private WorkerService workerService;
 
     @Autowired
-    WorkController(WorkerService workerService) {
+    WorkerController(WorkerService workerService) {
         this.workerService = workerService;
     }
 
