@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mayconb2</groupId>
-    <artifactId>hr-server</artifactId>
+    <artifactId>hr-config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hr-server</name>
+    <name>hr-config-server</name>
     <description>Config Server</description>
     <properties>
         <java.version>11</java.version>
